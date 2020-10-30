@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Demo</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+        <div class="u">
+            <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
+        </div>
+        <div class="logo-container">
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/B.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/l.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/u.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/g.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/r.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/A2.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/v.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/t.png" height="53" width="50" />
+            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/ib.png" height="53" />
+        </div>
+        <div class="main-content">
+            <div class="content-1">
+                <p class="mega-title mega-font mega-content-1">Antigraviti</p>
+                <p class="mega-title-md mega-font mega-content-1">our way away from</p>
+                <p class="mega-title-md mega-font mega-content-1">the brandwagon</p>
+                <p class="mega-title-xs mega-font mt-5 mega-content-1">
+                    <span> We are collection of senior level strategists who have spent our<br>
+                    entire career building  strong brands and sharing their stories. <br> </span>
+                    <span class="mega-font">Our mission is simple &boxh; to help you accomplish your marketing <br> objectives, whether they are
+                    big or small.</span>
+                </p>
+
+            </div>
+            <div class="content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start mega-content-1">
+                <button class="content-button btn  btn-lg">ENTER</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+
+
+<script src="js/greensock/gsap.min.js"></script>
+<script type="text/javascript">
+    (function (gs) {
+        function animateLogo() {
+            var tl = gs.timeline({});
+            gs.set(".u", {y: -100})
+            tl.to(".u", {x: 600, y: 500, duration: 1, delay: 2, transform: "scale(1.5)", color: "blue", ease: Back.easeInOut});
+            tl.to(".u", {x: 600, y: 500, duration: 0.5, transform: "scale(1.7)", color: "blue", ease: Back.easeInOut});
+            tl.to(".u", {x: 600, y: 500, duration: 0.5, transform: "scale(1.4)", color: "blue", ease: Back.easeInOut});
+            tl.to(".u", {x: 600, y: 510, duration: 0.5, transform: "scale(1.6)", color: "blue", ease: Back.easeInOut});
+            tl.to(".u", {x: 620, y: 500, duration: 0.5, transform: "scale(1.3)", color: "blue", ease: Back.easeInOut});
+            tl.to(".u", {x: "-=20", y: "-=30", duration: 0.5, transform: "scale(1.5)", color: "blue", ease: Back.easeInOut});
+        }
+
+        function anim() {
+            var logoTimeline = gs.timeline({});
+
+            logoTimeline.from(".u-logo", {duration: 1.0, opacity: 0, ease: Back.easeInOut, scale : 2.8})
+            var tl = gs.timeline({repeat: 0, yoyo: false});
+            tl.from(".u-logo", {display:"none",opacity: 0.7, duration: 2, ease: Back.easeInOut, scale:0.8})
+                .add(logoTimeline, {delay: 1})
+                .from(".logo-scaled", {opacity: 0, y: "100", duration: 2, ease: Back.easeInOut, stagger: 0.2})
+                .to(".logo-scaled",{delay:2, opacity : 0, y : "-=40px", stagger:0.1, duration: 0.8, ease:Back.easeInOut, onCompleted: function (){
+                    console.log("Remove Dom Here")
+                    } })
+                .from(".mega-content-1", {display:"none",x: -299, opacity: 0, duration: 1.5, stagger: 0.7, ease: Back.easeIn})
+                .to(".mega-content-1",{
+                    y: 60, opacity: 0, duration: 1.7, stagger: 0.7, ease: Back.easeIn , delay:7 
+                })
+            //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
+            ;
+        }
+
+        function simpleAnimation() {
+            var timeline = gs.timeline({repeat: -1, yoyo: true});
+            timeline.to("div.logo-container", {
+                x: 630,
+                y: 340,
+                duration: 1.5,
+                opacity: 0.5,
+                backgroundColor: "red",
+                delay: 2,
+                ease: Back.easeInOut
+            });
+            timeline.to("div.logo-container", {
+                x: 450,
+                y: 580,
+                duration: 1,
+                opacity: 0.9,
+                transform: "scale(3.3)",
+                backgroundColor: "green",
+                ease: Back.easeInOut,
+                borderRadius: 0
+            });
+            timeline.to("div.logo-container", {
+                x: 830,
+                y: 240,
+                duration: 2.0,
+                opacity: 0.8,
+                transform: "scale(1)",
+                backgroundColor: "purple",
+                ease: Back.easeInOut,
+                borderRadius: "+=100"
+            });
+            timeline.to("div.logo-container", {
+                x: 1330, y: 440, duration: 1.5, opacity: 0.8, backgroundColor: "orange",
+                transform: "scale(2.1)",
+                ease: Back.easeInOut, borderRadius: "-=100"
+            });
+            gs.to("div.logo-container", {
+                x: 250,
+                y: 300,
+                duration: 1.6,
+                opacity: 0.9,
+                transform: "scale(1)",
+                backgroundColor: "blue",
+                ease: Back.easeInOut,
+                borderRadius: "+=100",
+            });
+            console.log(gs);
+        }
+
+        anim();
+        //animateLogo();
+        // simpleAnimation();
+    })(gsap);
+</script>
+</body>
+</html>
