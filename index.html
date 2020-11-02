@@ -17,15 +17,16 @@
             <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
         </div>
         <div class="logo-container">
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/B.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/L.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/u.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/G.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/R.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/A2.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/V.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/T.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/ib.png" height="53" />
+            <img class="u p-1 mr-1 logo-scaled" src="assets/images/logo/B.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/L.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/u.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/G.png"  width="50" />
+            <img class="u p-1 ml-1 logo-scaled" src="assets/images/logo/R.png"  width="50" />
+            <img class="u p-1 m-0 logo-scaled" src="assets/images/logo/A2.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/V.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/I.png"  />
+            <img class="u p-1  logo-scaled" src="assets/images/logo/T.png"  width="50" />
+            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/ib.png"  />
         </div>
         <div class="main-content ">
             <div class="content-1 ">
@@ -82,11 +83,11 @@
             var master = gs.timeline({ repeat : -1})
                 .add(animateLogo())
                 .add(animateBlugravity(),"-=1.2")
-                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "))
+                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "),"-=0.7")
                 .add(animateContent("secondContent", ".content-2 .mega-content-1"), "+=0.8")
             ;                
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
-           
+           //master.pause();
             
             function animateLogo()
             {
@@ -94,10 +95,10 @@
                     
                     .set(".u-logo", {opacity: 0})
                     .to(".u-logo", {duration: 2.2, opacity: 1,  scale : 2.7, ease: Elastic.easeInOut})
-                    .to(".u-logo", {duration: 1.2, opacity: 0.6, ease: Back.easeInOut, scale : 2.4})
-                    .to(".u-logo", {duration: 1.8, opacity: 1 , scale : 2.6})
-                    .to(".u-logo", {duration: 1.8, opacity: 0 , scale : 2.2})
-                    .to(".u-logo", {duration: 1.3, opacity: 0 , display :"none"})
+                    .to(".u-logo", {duration: 0.8, opacity: 0.6, ease: Back.easeInOut, scale : 2.4})
+                    .to(".u-logo", {duration: 1.1, opacity: 1 , scale : 2.6})
+                    .to(".u-logo", {duration: 1.1, opacity: 0 , scale : 2.2})
+                    .to(".u-logo", {duration: 0.6, opacity: 0 , display :"none"})
                     //.to("u-logo", { duration : 1.8,})
                 ;
                 return tl;
@@ -111,9 +112,9 @@
                 return tl;
             }
             function animateBlugravity(){
-                var tl  =  gs.timeline({ id :"blugravity", defaults:{ duration : 0.8 , ease: Back.easeInOut}})
-                    .from(".logo-scaled", {opacity: 0, y: "70", duration: 1.2, stagger: 0.2})
-                    .to(".logo-scaled", {  duration: 0.4, stagger: 0.2, scale:1.3, ease:Power1.easeInOut})
+                var tl  =  gs.timeline({ id :"blugravity", defaults:{ duration : 0.8 , ease: Elastic.easeInOut}})
+                    .from(".logo-scaled", {opacity: 0, scale:1.8 , duration: 1.2, stagger: 0.2})
+                    .to(".logo-scaled", {  duration: 0.4, stagger: 0.2, scale:1.3})
                     .to(".logo-scaled",{delay:2, opacity : 0, y : "-=40px", stagger:0.1, duration: 0.8, onCompleted: function (){
                             console.log("Remove Dom Here")
                         } })
