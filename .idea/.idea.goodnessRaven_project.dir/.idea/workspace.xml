@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/analytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/brandux_preloader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brandux_files/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gsap.html" beforeDir="false" afterPath="$PROJECT_DIR$/gsap.html" afterDir="false" />
     </list>
@@ -46,16 +54,9 @@
     <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
       <ranges>
         <range start1="2" end1="2" start2="2" end2="17" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="3" end1="4" start2="18" end2="26" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="16" end1="16" start2="38" end2="41" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="33" end1="33" start2="58" end2="75" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="34" end1="34" start2="76" end2="77" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="54" end1="54" start2="97" end2="98" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="61" end1="62" start2="105" end2="107" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="63" end1="63" start2="108" end2="123" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="70" end1="70" start2="130" end2="154" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="72" end1="72" start2="156" end2="159" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="74" end1="74" start2="161" end2="165" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="5" end1="5" start2="20" end2="28" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="48" end1="58" start2="71" end2="74" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="116" end1="116" start2="132" end2="156" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
       </ranges>
     </file>
   </component>
