@@ -9,9 +9,10 @@
 
 </head>
 <body>
+<!--d-flex flex-column justify-content-center align-items-center vh-100-->
 <div class="container-fluid">
-    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
-        <div class="u">
+    <div class="">
+        <div class="u d-none">
             <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
         </div>
         <div class="logo-container">
@@ -27,9 +28,9 @@
         </div>
         <div class="main-content">
             <div class="content-1">
-                <p class="mega-title mega-font mega-content-1">Antigraviti</p>
-                <p class="mega-title-md mega-font mega-content-1">our way away from</p>
-                <p class="mega-title-md mega-font mega-content-1">the brandwagon</p>
+                <p class="mega-title mega-font mega-content-1"><span>Antigraviti</span></p>
+                <p class="mega-title-md mega-font mega-content-1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
+                <p class="mega-title-md mega-font mega-content-1"><span>the</span><span> brandwagon</span></p>
                 <p class="mega-title-xs mega-font mt-5 mega-content-1">
                     <span> We are collection of senior level strategists who have spent our<br>
                     entire career building  strong brands and sharing their stories. <br> </span>
@@ -38,7 +39,19 @@
                 </p>
 
             </div>
-            <div class="content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start mega-content-1">
+            <div class="content-2">
+                <p class="mega-title mega-font mega-content-1">Captiviti</p>
+                <p class="mega-title-md mega-font mega-content-1">Brand kinetic Energy</p>
+                <p class="mega-title-md mega-font mega-content-1">Nowhere to hide</p>
+                <p class="mega-title-xs mega-font mt-5 mega-content-1">
+                    <span> We are collection of senior level strategists who have spent our<br>
+                    entire career building  strong brands and sharing their stories. <br> </span>
+                    <span class="mega-font">Our mission is simple &boxh; to help you accomplish your marketing <br> objectives, whether they are
+                    big or small.</span>
+                </p>
+
+            </div>
+            <div class="content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start">
                 <button class="content-button btn  btn-lg">ENTER</button>
             </div>
         </div>
@@ -53,7 +66,7 @@
 <script src="js/greensock/gsap.min.js"></script>
 <script type="text/javascript">
     (function (gs) {
-        function animateLogo() {
+        function animateLogo____old() {
             var tl = gs.timeline({});
             gs.set(".u", {y: -100})
             tl.to(".u", {x: 600, y: 500, duration: 1, delay: 2, transform: "scale(1.5)", color: "blue", ease: Back.easeInOut});
@@ -65,22 +78,39 @@
         }
 
         function anim() {
-            var logoTimeline = gs.timeline({});
-
-            logoTimeline.from(".u-logo", {duration: 1.0, opacity: 0, ease: Back.easeInOut, scale : 2.8})
-            var tl = gs.timeline({repeat: 0, yoyo: false});
-            tl.from(".u-logo", {display:"none",opacity: 0.7, duration: 2, ease: Back.easeInOut, scale:0.8})
-                .add(logoTimeline, {delay: 1})
-                .from(".logo-scaled", {opacity: 0, y: "100", duration: 2, ease: Back.easeInOut, stagger: 0.2})
-                .to(".logo-scaled",{delay:2, opacity : 0, y : "-=40px", stagger:0.1, duration: 0.8, ease:Back.easeInOut, onCompleted: function (){
-                    console.log("Remove Dom Here")
-                    } })
-                .from(".mega-content-1", {display:"none",x: -299, opacity: 0, duration: 1.5, stagger: 0.7, ease: Back.easeIn})
-                .to(".mega-content-1",{
-                    y: 60, opacity: 0, duration: 1.7, stagger: 0.7, ease: Back.easeIn , delay:7 
-                })
+            var master = gs.timeline({ repeat : -1})
+                .add(animateBlugravity)
+                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "+=1.2")
+                .add(animateContent("secondContent", ".content-2 .mega-content-1"), "-=1.2")
+            ;
+            
+                
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
             ;
+            
+            function animateLogo()
+            {
+                var tl  =  gs.timeline({ id :"logo"})
+                    .from(".u-logo", {duration: 1.0, opacity: 0, ease: Back.easeInOut, scale : 2.8})
+                ;
+                return tl;
+            }
+            function animateContent(id, elem){
+                var tl  =  gs.timeline({ id :id, defaults:{ duration : 1.0 , ease: Back.easeInOut}})
+                    .from(elem, {y: 50, x:-10, opacity: 0,  duration: 0.8, stagger: 0.3, display:"none"})
+                    .to(elem,{
+                        y: 60, opacity: 0,  stagger: 0.3 , delay:7, display:"none"
+                    });
+                return tl;
+            }
+            function animateBlugravity(){
+                var tl  =  gs.timeline({ id :"blugravity", defaults:{ duration : 1.2 , ease: Back.easeInOut}})
+                    .from(".logo-scaled", {opacity: 0, y: "70", duration: 2, stagger: 0.2})
+                    .to(".logo-scaled",{delay:4, opacity : 0, y : "-=40px", stagger:0.1, duration: 0.8, onCompleted: function (){
+                            console.log("Remove Dom Here")
+                        } });
+                return tl;
+            }
         }
 
         function simpleAnimation() {
