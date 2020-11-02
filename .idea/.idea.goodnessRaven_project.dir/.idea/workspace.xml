@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/brandux_preloader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brandux_files/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gsap.html" beforeDir="false" afterPath="$PROJECT_DIR$/gsap.html" afterDir="false" />
     </list>
     <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="">
@@ -54,9 +45,12 @@
     <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
       <ranges>
         <range start1="2" end1="2" start2="2" end2="17" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="5" end1="5" start2="20" end2="28" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="48" end1="58" start2="71" end2="74" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="116" end1="116" start2="132" end2="156" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="5" end1="14" start2="20" end2="20" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="56" end1="59" start2="62" end2="68" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="109" end1="110" start2="118" end2="126" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="117" end1="117" start2="133" end2="157" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="121" end1="122" start2="161" end2="163" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="128" end1="128" start2="169" end2="173" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
       </ranges>
     </file>
   </component>
@@ -107,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604298483615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Best View">
+      <created>1604319901658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604319901658</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,13 +120,18 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
+    <MESSAGE value="Best View" />
+    <option name="LAST_COMMIT_MESSAGE" value="Best View" />
   </component>
   <component name="WindowStateProjectService">
     <state x="807" y="427" key="VCS.ChangelistChooser" timestamp="1604298462425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604298462425" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604319904816">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604319904816" />
     <state x="740" y="325" key="save.file.as.template.dialog" timestamp="1603797312026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
