@@ -63,9 +63,9 @@ div.content-2 {
     z-index: 20;
 }
 
-div.content-1, div.content-2{
-    position: absolute;
+div.content-1, div.content-2 {
+   /* position: absolute;*/
 }
-div.main-content{
+div.main-content {
     
 }

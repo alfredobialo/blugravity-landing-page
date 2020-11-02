@@ -9,9 +9,9 @@
 
 </head>
 <body>
-<!--d-flex flex-column justify-content-center align-items-center vh-100-->
+<!---->
 <div class="container-fluid">
-    <div class="">
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
         <div class="u d-none">
             <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
         </div>
@@ -79,14 +79,13 @@
 
         function anim() {
             var master = gs.timeline({ repeat : -1})
-                .add(animateBlugravity)
-                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "+=1.2")
-                .add(animateContent("secondContent", ".content-2 .mega-content-1"), "-=1.2")
-            ;
-            
-                
+                .add(animateLogo())
+                .add(animateBlugravity())
+                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "))
+                .add(animateContent("secondContent", ".content-2 .mega-content-1"))
+            ;                
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
-            ;
+           
             
             function animateLogo()
             {
@@ -99,7 +98,7 @@
                 var tl  =  gs.timeline({ id :id, defaults:{ duration : 1.0 , ease: Back.easeInOut}})
                     .from(elem, {y: 50, x:-10, opacity: 0,  duration: 0.8, stagger: 0.3, display:"none"})
                     .to(elem,{
-                        y: 60, opacity: 0,  stagger: 0.3 , delay:7, display:"none"
+                        y: 60, opacity: 0,  stagger: 0.3 , delay:7, display :"none"
                     });
                 return tl;
             }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="" />
+    <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gsap.html" beforeDir="false" afterPath="$PROJECT_DIR$/gsap.html" afterDir="false" />
+    </list>
+    <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -31,7 +42,25 @@
       </list>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="17" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="3" end1="4" start2="18" end2="26" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="16" end1="16" start2="38" end2="41" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="33" end1="33" start2="58" end2="75" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="34" end1="34" start2="76" end2="77" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="54" end1="54" start2="97" end2="98" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="61" end1="62" start2="105" end2="107" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="63" end1="63" start2="108" end2="123" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="70" end1="70" start2="130" end2="154" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="72" end1="72" start2="156" end2="159" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="74" end1="74" start2="161" end2="165" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="1j6U4SuDY01jDClLVCLsquZHuud" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +81,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="" />
+      <changelist id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="" />
       <created>1603123843953</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -59,8 +89,24 @@
       <workItem from="1603123850043" duration="2132000" />
       <workItem from="1603473202638" duration="7092000" />
       <workItem from="1603541993802" duration="4113000" />
-      <workItem from="1603619326923" duration="29632000" />
+      <workItem from="1603619326923" duration="31461000" />
+      <workItem from="1604238933463" duration="11978000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1604066239829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604066239829</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second Commit">
+      <created>1604298483615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604298483615</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,8 +116,15 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="807" y="427" key="VCS.ChangelistChooser" timestamp="1604298462425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604298462425" />
     <state x="740" y="325" key="save.file.as.template.dialog" timestamp="1603797312026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
