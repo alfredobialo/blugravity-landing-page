@@ -17,12 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/svg-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-    <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="" />
+    <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,9 +51,25 @@
         <option value="$PROJECT_DIR$/Brandux.html" />
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/gsap.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
+      <ranges>
+        <range start1="19" end1="21" start2="19" end2="19" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="24" end1="25" start2="22" end2="25" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="53" end1="53" start2="53" end2="54" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="56" end1="56" start2="57" end2="72" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="127" end1="128" start2="143" end2="151" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="167" end1="168" start2="190" end2="192" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="170" end1="170" start2="194" end2="202" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="174" end1="175" start2="206" end2="207" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="177" end1="178" start2="209" end2="210" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1j6U4SuDY01jDClLVCLsquZHuud" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -172,10 +188,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604298462425" />
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604322271959">
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604377496317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604322271959" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604377496317" />
     <state x="740" y="325" key="save.file.as.template.dialog" timestamp="1603797312026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
