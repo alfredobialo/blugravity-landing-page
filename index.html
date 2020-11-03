@@ -12,22 +12,12 @@
 <!---->
 
 <div class="container-fluid ">
-    <div class="vh-100 d-flex flex-column justify-content-center align-items-center ">
-        <div class="u">
-            <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
+    <div class="vh-100   d-flex flex-column justify-content-center align-items-center">
+        <div class="u ">
+            <img class="u-logo " src="assets/images/logo/logo.png" width="300" />
         </div>
-        <div class="logo-container">
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/B.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/L.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/u.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/G.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/R.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/A2.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/V.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/T.png" height="53" width="50" />
-            <img class="u p-1 m-2 logo-scaled" src="assets/images/logo/ib.png" height="53" />
-        </div>
-        <div class="main-content ">
+
+        <div class="main-content  ">
             <div class="content-1 ">
                 <p class="mega-title mega-font mega-content-1"><span>Antigraviti</span></p>
                 <p class="mega-title-md mega-font mega-content-1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
@@ -79,45 +69,51 @@
         }
 
         function anim() {
-            var master = gs.timeline({ repeat : -1})
-                .add(animateLogo())
-                .add(animateBlugravity(),"-=1.2")
-                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "))
-                .add(animateContent("secondContent", ".content-2 .mega-content-1"), "+=0.8")
-            ;                
+            var master = gs.timeline({repeat: -1})
+                    .add(animateLogo())
+                    .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "-=0.7")
+                    .add(animateContent("secondContent", ".content-2 .mega-content-1"))
+            ;
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
-           
-            
-            function animateLogo()
-            {
-                var tl  =  gs.timeline({ id :"logo"})
-                    
-                    .set(".u-logo", {opacity: 0})
-                    .to(".u-logo", {duration: 2.2, opacity: 1,  scale : 2.7, ease: Elastic.easeInOut})
-                    .to(".u-logo", {duration: 1.2, opacity: 0.6, ease: Back.easeInOut, scale : 2.4})
-                    .to(".u-logo", {duration: 1.8, opacity: 1 , scale : 2.6})
-                    .to(".u-logo", {duration: 1.8, opacity: 0 , scale : 2.2})
-                    .to(".u-logo", {duration: 1.3, opacity: 0 , display :"none"})
+            //master.pause();
+
+            function animateLogo() {
+                var tl = gs.timeline({id: "logo"})
+
+                        .set("img.u-logo", {opacity: 0})
+                        .set(".main-content", {display: "none"})
+                        .to(".u-logo", {duration: 2.2, opacity: 1, scale: 1.8, ease: Elastic.easeInOut})
+                        .to(".u-logo", {duration: 1.1, delay: 2, scale: 1.78})
+                        .to(".u-logo", {duration: 0.8, marginBottom: 30, scale: 1.78})
+                        .to(".u-logo", {duration: 0.4, opacity: 0})
+                        .to(".u-logo", {duration: 0.1, opacity: 0, display: "none", onComplete : function (){
+                            gs.set(".main-content", {display: "block"});
+                            }})
                     //.to("u-logo", { duration : 1.8,})
                 ;
                 return tl;
             }
-            function animateContent(id, elem){
-                var tl  =  gs.timeline({ id :id, defaults:{ duration : 1.0 , ease: Back.easeInOut}})
-                    .from(elem, {y: 50, x:-10, opacity: 0,  duration: 1, stagger: 0.3, display: "none"})
-                    .to(elem,{y: -20, x:100,  opacity: 0,  stagger: 0.2 , delay:5, display : "none"})
-                    
+
+            function animateContent(id, elem) {
+                var tl = gs.timeline({id: id, defaults: {duration: 1.0, ease: Elastic.easeInOut}})
+                    .from(elem, {y: 10, x: 17, opacity: 0, duration: 1, stagger: 0.3, display : "none"})
+                    .to(elem, {y: -10, x: 60, opacity: 0, stagger: 0.2, delay: 5})
+                    .to(elem, {display: "none"})
+
                 ;
                 return tl;
             }
-            function animateBlugravity(){
-                var tl  =  gs.timeline({ id :"blugravity", defaults:{ duration : 0.8 , ease: Back.easeInOut}})
-                    .from(".logo-scaled", {opacity: 0, y: "70", duration: 1.2, stagger: 0.2})
-                    .to(".logo-scaled", {  duration: 0.4, stagger: 0.2, scale:1.3, ease:Power1.easeInOut})
-                    .to(".logo-scaled",{delay:2, opacity : 0, y : "-=40px", stagger:0.1, duration: 0.8, onCompleted: function (){
+
+            function animateBlugravity() {
+                var tl = gs.timeline({id: "blugravity", defaults: {duration: 0.8, ease: Elastic.easeInOut}})
+                    .from(".logo-scaled", {opacity: 0, scale: 1.8, duration: 1.2, stagger: 0.2})
+                    .to(".logo-scaled", {duration: 0.4, stagger: 0.2, scale: 1.3})
+                    .to(".logo-scaled", {
+                        delay: 2, opacity: 0, y: "-=40px", stagger: 0.1, duration: 0.8, onCompleted: function () {
                             console.log("Remove Dom Here")
-                        } })
-                .to(".logo-scaled", { display:"none", opacity : 0, duration:0.7});
+                        }
+                    })
+                    .to(".logo-scaled", {display: "none", opacity: 0, duration: 0.7});
                 return tl;
             }
         }

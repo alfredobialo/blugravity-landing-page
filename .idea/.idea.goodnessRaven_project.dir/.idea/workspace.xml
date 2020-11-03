@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gsap.html" beforeDir="false" afterPath="$PROJECT_DIR$/gsap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,30 +46,35 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Brandux Agency _ UX_UI Design &amp; Branding.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/mailTemplate.html" />
         <option value="$PROJECT_DIR$/assets/gsap.html" />
         <option value="$PROJECT_DIR$/Brandux.html" />
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/gsap.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
       <ranges>
-        <range start1="2" end1="2" start2="2" end2="17" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="5" end1="14" start2="20" end2="20" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="56" end1="59" start2="62" end2="68" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="109" end1="110" start2="118" end2="126" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="117" end1="117" start2="133" end2="157" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="121" end1="122" start2="161" end2="163" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="128" end1="128" start2="169" end2="173" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="19" end1="21" start2="19" end2="19" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="24" end1="25" start2="22" end2="25" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="53" end1="53" start2="53" end2="54" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="56" end1="56" start2="57" end2="72" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="127" end1="128" start2="143" end2="151" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="167" end1="168" start2="190" end2="192" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="170" end1="170" start2="194" end2="202" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="174" end1="175" start2="206" end2="207" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="177" end1="178" start2="209" end2="210" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
       </ranges>
     </file>
   </component>
   <component name="ProjectId" id="1j6U4SuDY01jDClLVCLsquZHuud" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -108,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604319901658</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modified gitignore">
+      <created>1604322270677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604322270677</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes to Logo Width and Height">
+      <created>1604348459447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604348459447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,22 +149,49 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <confirmRemoveEmptyChangelist value="1" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Best View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Best View" />
+    <MESSAGE value="modified gitignore" />
+    <MESSAGE value="Changes to Logo Width and Height" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to Logo Width and Height" />
   </component>
   <component name="WindowStateProjectService">
     <state x="807" y="427" key="VCS.ChangelistChooser" timestamp="1604298462425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604298462425" />
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604319904816">
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604377496317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604319904816" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604377496317" />
     <state x="740" y="325" key="save.file.as.template.dialog" timestamp="1603797312026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
