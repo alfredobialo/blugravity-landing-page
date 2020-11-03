@@ -17,7 +17,7 @@
             <img class="u-logo " src="assets/images/logo/logo.png" width="300" />
         </div>
 
-        <div class="main-content  ">
+        <div class="main-content d-none ">
             <div class="content-1 ">
                 <p class="mega-title mega-font mega-content-1"><span>Antigraviti</span></p>
                 <p class="mega-title-md mega-font mega-content-1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
@@ -71,8 +71,8 @@
         function anim() {
             var master = gs.timeline({repeat: -1})
                     .add(animateLogo())
-                    .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "-=0.7")
-                    .add(animateContent("secondContent", ".content-2 .mega-content-1"))
+                    //.add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "-=0.7")
+                    //.add(animateContent("secondContent", ".content-2 .mega-content-1"))
             ;
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
             //master.pause();
