@@ -14,21 +14,10 @@
 <div class="container-fluid ">
     <div class="vh-100 d-flex flex-column justify-content-center align-items-center ">
         <div class="u">
-            <img class="u-logo p-1 m-2" src="assets/images/logo/u.png" height="53" width="50" />
+            <img class="u-logo p-1 m-2" src="assets/images/logo/logo.png"  width="300" />
         </div>
-        <div class="logo-container">
-            <img class="u p-1 mr-1 logo-scaled" src="assets/images/logo/B.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/L.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/u.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/G.png"  width="50" />
-            <img class="u p-1 ml-1 logo-scaled" src="assets/images/logo/R.png"  width="50" />
-            <img class="u p-1 m-0 logo-scaled" src="assets/images/logo/A2.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/V.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/I.png"  />
-            <img class="u p-1  logo-scaled" src="assets/images/logo/T.png"  width="50" />
-            <img class="u p-1 m-1 logo-scaled" src="assets/images/logo/ib.png"  />
-        </div>
-        <div class="main-content ">
+       
+        <div class="main-content d-none ">
             <div class="content-1 ">
                 <p class="mega-title mega-font mega-content-1"><span>Antigraviti</span></p>
                 <p class="mega-title-md mega-font mega-content-1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
@@ -82,9 +71,8 @@
         function anim() {
             var master = gs.timeline({ repeat : -1})
                 .add(animateLogo())
-                .add(animateBlugravity(),"-=1.2")
-                .add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "),"-=0.7")
-                .add(animateContent("secondContent", ".content-2 .mega-content-1"), "+=0.8")
+                //.add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "),"-=0.7")
+                //.add(animateContent("secondContent", ".content-2 .mega-content-1"), "+=0.8")
             ;                
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
            //master.pause();
@@ -97,7 +85,8 @@
                     .to(".u-logo", {duration: 2.2, opacity: 1,  scale : 2.7, ease: Elastic.easeInOut})
                     .to(".u-logo", {duration: 0.8, opacity: 0.6, ease: Back.easeInOut, scale : 2.4})
                     .to(".u-logo", {duration: 1.1, opacity: 1 , scale : 2.6})
-                    .to(".u-logo", {duration: 1.1, opacity: 0 , scale : 2.2})
+                    .to(".u-logo", {duration: 1.1, delay: 2 , scale : 2.5})
+                    .to(".u-logo", {duration: 1.1, opacity: 0 , scale : 2.5})
                     .to(".u-logo", {duration: 0.6, opacity: 0 , display :"none"})
                     //.to("u-logo", { duration : 1.8,})
                 ;

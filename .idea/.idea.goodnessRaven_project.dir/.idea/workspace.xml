@@ -17,6 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo/svg-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -54,7 +56,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1j6U4SuDY01jDClLVCLsquZHuud" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604322270677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes to Logo Width and Height">
+      <created>1604348459447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604348459447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +164,8 @@
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Best View" />
     <MESSAGE value="modified gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified gitignore" />
+    <MESSAGE value="Changes to Logo Width and Height" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to Logo Width and Height" />
   </component>
   <component name="WindowStateProjectService">
     <state x="807" y="427" key="VCS.ChangelistChooser" timestamp="1604298462425">
