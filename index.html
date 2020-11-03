@@ -12,9 +12,9 @@
 <!---->
 
 <div class="container-fluid ">
-    <div class="vh-100 d-flex flex-column justify-content-center align-items-center ">
-        <div class="u">
-            <img class="u-logo p-1 m-2" src="assets/images/logo/logo.png"  width="300" />
+    <div class="vh-100   d-flex flex-column justify-content-center align-items-center">
+        <div class="u ">
+            <img class="u-logo " src="assets/images/logo/logo.png"  width="300" />
         </div>
        
         <div class="main-content d-none ">
@@ -81,13 +81,12 @@
             {
                 var tl  =  gs.timeline({ id :"logo"})
                     
-                    .set(".u-logo", {opacity: 0})
+                    .set("img.u-logo", {opacity: 0})
                     .to(".u-logo", {duration: 2.2, opacity: 1,  scale : 1.8, ease: Elastic.easeInOut})
-                    .to(".u-logo", {duration: 0.8, opacity: 0.6, ease: Back.easeInOut, scale : 1.7})
-                    .to(".u-logo", {duration: 1.1, opacity: 1 , scale : 1.7})
                     .to(".u-logo", {duration: 1.1, delay: 2 , scale : 1.78})
-                    .to(".u-logo", {duration: 1.1, opacity: 0 , scale : 1.78})
-                    .to(".u-logo", {duration: 0.6, opacity: 0 , display :"none"})
+                    .to(".u-logo", {duration: 0.4,  marginBottom: 30 , scale : 1.78})
+                    .to(".u-logo", {duration: 0.4, opacity: 0 })
+                    .to(".u-logo", {duration: 0.1, opacity: 0 , display :"none"})
                     //.to("u-logo", { duration : 1.8,})
                 ;
                 return tl;
