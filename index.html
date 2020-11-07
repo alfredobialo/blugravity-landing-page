@@ -13,7 +13,7 @@
     <meta property="og:title" content="Blugraviti">
     <meta property="og:type" content="object">
     <meta property="og:url" content="http://blugraviti.com">
-    <meta name="description"  content="Creative Brand Customization">
+    <meta name="description" content="Creative Brand Customization">
     <meta property="og:description" content="Creative Brand Customization">
     <meta property="og:updated_time" content="2020-10-20T10:54:13Z">
     <meta property="og:site_name" content="Blugravity">
@@ -86,8 +86,8 @@
 
         function anim() {
             var master = gs.timeline({repeat: -1})
-                   // .add(animateLogo())
-                .add(animateContent("firstContent", ".content-1 .mega-content-1"), "-=0.7")
+                    .add(animateLogo())
+                    .add(animateContent("firstContent", ".content-1 .mega-content-1"), "-=0.7")
                 //.add(animateContent("secondContent", ".content-2 .mega-content-1"))
             ;
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
@@ -97,16 +97,19 @@
                 var tl = gs.timeline({id: "logo"})
 
                         .set("img.u-logo", {opacity: 0})
-                        //.set(".main-content", {display: "none"})
+                        .set(".main-content", {display: "none"})
                         .to(".u-logo", {duration: 2.2, opacity: 1, scale: 1.8, ease: Elastic.easeInOut})
                         .to(".u-logo", {duration: 1.1, delay: 2, scale: 1.78})
                         .to(".u-logo", {duration: 0.8, marginBottom: 30, scale: 1.78})
-                        .to(".u-logo", {duration: 0.4, opacity: 0})
+                        .to(".u-logo", {duration: 0.8, x:0, scale: 0.9, onComplete: function () {
+                                 gs.set(".main-content", {display: "block"});
+                            }})
+                       /* .to(".u-logo", {duration: 0.4, opacity: 0})
                         .to(".u-logo", {
                             duration: 0.1, opacity: 0, display: "none", onComplete: function () {
-                               // gs.set(".main-content", {display: "block"});
+                                // gs.set(".main-content", {display: "block"});
                             }
-                        })
+                        })*/
                     //.to("u-logo", { duration : 1.8,})
                 ;
                 return tl;
@@ -114,13 +117,13 @@
 
             function animateContent(id, elem) {
                 var tl = gs.timeline({id: id, defaults: {duration: 1.0}})
-                    .from(elem, {y: -50,  opacity: 0, duration: 1.5, stagger: 0.3, ease: Elastic.easeInOut})
-                    .from(".content-1-text .text-content1", {duration:1.0, opacity:0, y:-70},"-=1")
-                    .from(".content-1-text .text-content2", {duration:1.2, opacity:0, y:30},"-=1")
-                     .to( ".content-1-text .text-content2",   { opacity : 0, y: "+=50", ease : Back.easeInOut,duration : 1.2, delay: 4})
-                    .to( ".content-1-text .text-content1",   { opacity : 0, y: "-=50", ease : Back.easeInOut,duration : 1.2},"-=1.0")
+                    .from(elem, {y: -50, opacity: 0, duration: 1.5, stagger: 0.3, ease: Elastic.easeInOut})
+                    .from(".content-1-text .text-content1", {duration: 1.0, opacity: 0, y: -70}, "-=1")
+                    .from(".content-1-text .text-content2", {duration: 1.2, opacity: 0, y: 30}, "-=1")
+                    .to(".content-1-text .text-content2", {opacity: 0, y: "+=50", ease: Back.easeInOut, duration: 1.2, delay: 4})
+                    .to(".content-1-text .text-content1", {opacity: 0, y: "-=50", ease: Back.easeInOut, duration: 1.2}, "-=1.0")
 
-                    .to(elem, { duration:1.2, y:50, opacity: 0, stagger: 0.2, delay: 1, ease: Power1.easeIn})
+                    .to(elem, {duration: 0.8, y: 50, opacity: 0, stagger: 0.2, ease: Power1.easeIn}, "-=0.8")
 
 
                 ;
@@ -192,7 +195,7 @@
 
         anim();
         //animateLogo();
-         //simpleAnimation();
+        //simpleAnimation();
     })(gsap);
 </script>
 </body>
