@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Blugraviti";
+    src: url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf");
+    src: url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf") format("woff"),
+    url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf") format("opentype")
+
+}
 div.circle {
     width: 200px;
     height: 200px;
