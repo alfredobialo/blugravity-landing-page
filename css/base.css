@@ -54,7 +54,10 @@ div.circle {
 .h-43 {
     height: 30% !important;
 }
-
+div.content-1, div.content-2
+{
+    min-width: 500px;
+}
 div.content-1 {
     z-index: 10;
 }
@@ -67,5 +70,5 @@ div.content-1, div.content-2 {
    /* position: absolute;*/
 }
 div.main-content {
-    
+
 }
