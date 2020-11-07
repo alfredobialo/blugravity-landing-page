@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animation Demo</title>
-
+    <title>Blugravity - Welcome</title>
+    <link rel="shortcut icon" type="image/x-ico" href="assets/images/Blufavicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="http://blugraviti.com/assets/images/Blufavicon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@blugraviti" />
+    <meta property="og:title" content="Blugraviti">
+    <meta property="og:type" content="object">
+    <meta property="og:url" content="http://blugraviti.com">
+    <meta name="description"  content="Creative Brand Customization">
+    <meta property="og:description" content="Creative Brand Customization">
+    <meta property="og:updated_time" content="2020-10-20T10:54:13Z">
+    <meta property="og:site_name" content="Blugravity">
+    <meta property="og:locale" content="en_US">
+    <meta name="application-name" content="Blugraviti">
+    <meta name="apple-mobile-web-app-title" content="Blugraviti">
 </head>
 <body>
 <!---->
@@ -17,20 +30,23 @@
             <img class="u-logo " src="assets/images/logo/logo.png" width="300" />
         </div>
 
-        <div class="main-content d-none ">
+        <div class="main-content position-relative ">
             <div class="content-1 ">
-                <p class="mega-title mega-font mega-content-1"><span>Antigraviti</span></p>
-                <p class="mega-title-md mega-font mega-content-1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
-                <p class="mega-title-md mega-font mega-content-1"><span>the</span><span> brandwagon</span></p>
-                <p class="mega-title-xs mega-font mt-5 mega-content-1">
+                <p class="mega-title mega-font mega-content-1">Antigraviti</p>
+            </div>
+            <div class="content-1-text">
+                <p class="mega-title-md mega-font text-content1"><span>our</span><span> way</span><span> away</span><span> from</span></p>
+                <p class="mega-title-md mega-font text-content2"><span>the</span><span> brandwagon</span></p>
+            </div>
+            <div class="content-1-footer d-none">
+                <p class="mega-title-xs mega-font mt-5 text-content-footer">
                     <span> We are collection of senior level strategists who have spent our<br>
                     entire career building  strong brands and sharing their stories. <br> </span>
                     <span class="mega-font">Our mission is simple &boxh; to help you accomplish your marketing <br> objectives, whether they are
                     big or small.</span>
                 </p>
-
             </div>
-            <div class="content-2 ">
+            <div class="content-2 position-absolute d-none">
                 <p class="mega-title mega-font mega-content-1">Captiviti</p>
                 <p class="mega-title-md mega-font mega-content-1">Brand kinetic Energy</p>
                 <p class="mega-title-md mega-font mega-content-1">Nowhere to hide</p>
@@ -42,7 +58,7 @@
                 </p>
 
             </div>
-            <div class="content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start">
+            <div class="d-none content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start">
                 <button class="content-button btn  btn-lg">ENTER</button>
             </div>
         </div>
@@ -70,9 +86,9 @@
 
         function anim() {
             var master = gs.timeline({repeat: -1})
-                    .add(animateLogo())
-                    //.add(animateContent("firstContent", ".content-1 .mega-content-1, .content-footer "), "-=0.7")
-                    //.add(animateContent("secondContent", ".content-2 .mega-content-1"))
+                   // .add(animateLogo())
+                .add(animateContent("firstContent", ".content-1 .mega-content-1"), "-=0.7")
+                //.add(animateContent("secondContent", ".content-2 .mega-content-1"))
             ;
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
             //master.pause();
@@ -81,24 +97,31 @@
                 var tl = gs.timeline({id: "logo"})
 
                         .set("img.u-logo", {opacity: 0})
-                        .set(".main-content", {display: "none"})
+                        //.set(".main-content", {display: "none"})
                         .to(".u-logo", {duration: 2.2, opacity: 1, scale: 1.8, ease: Elastic.easeInOut})
                         .to(".u-logo", {duration: 1.1, delay: 2, scale: 1.78})
                         .to(".u-logo", {duration: 0.8, marginBottom: 30, scale: 1.78})
                         .to(".u-logo", {duration: 0.4, opacity: 0})
-                        .to(".u-logo", {duration: 0.1, opacity: 0, display: "none", onComplete : function (){
-                            gs.set(".main-content", {display: "block"});
-                            }})
+                        .to(".u-logo", {
+                            duration: 0.1, opacity: 0, display: "none", onComplete: function () {
+                               // gs.set(".main-content", {display: "block"});
+                            }
+                        })
                     //.to("u-logo", { duration : 1.8,})
                 ;
                 return tl;
             }
 
             function animateContent(id, elem) {
-                var tl = gs.timeline({id: id, defaults: {duration: 1.0, ease: Elastic.easeInOut}})
-                    .from(elem, {y: 10, x: 17, opacity: 0, duration: 1, stagger: 0.3, display : "none"})
-                    .to(elem, {y: -10, x: 60, opacity: 0, stagger: 0.2, delay: 5})
-                    .to(elem, {display: "none"})
+                var tl = gs.timeline({id: id, defaults: {duration: 1.0}})
+                    .from(elem, {y: -50,  opacity: 0, duration: 1.5, stagger: 0.3, ease: Elastic.easeInOut})
+                    .from(".content-1-text .text-content1", {duration:1.0, opacity:0, y:-70},"-=1")
+                    .from(".content-1-text .text-content2", {duration:1.2, opacity:0, y:30},"-=1")
+                     .to( ".content-1-text .text-content2",   { opacity : 0, y: "+=50", ease : Back.easeInOut,duration : 1.2, delay: 4})
+                    .to( ".content-1-text .text-content1",   { opacity : 0, y: "-=50", ease : Back.easeInOut,duration : 1.2},"-=1.0")
+
+                    .to(elem, { duration:1.2, y:50, opacity: 0, stagger: 0.2, delay: 1, ease: Power1.easeIn})
+
 
                 ;
                 return tl;
@@ -169,7 +192,7 @@
 
         anim();
         //animateLogo();
-        // simpleAnimation();
+         //simpleAnimation();
     })(gsap);
 </script>
 </body>
