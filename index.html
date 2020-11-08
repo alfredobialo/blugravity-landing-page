@@ -27,7 +27,7 @@
 <div class="container-fluid ">
     <div class="vh-100   d-flex flex-column justify-content-center align-items-center">
         <div class="u ">
-            <img class="u-logo " src="assets/images/logo/logo.png" width="300" />
+            <img class="u-logo " src="assets/images/logo/main-logo.png" width="300" />
         </div>
 
         <div class="main-content position-relative ">
@@ -105,7 +105,8 @@
                         .to(".u-logo", {duration: 2.2, opacity: 1, scale: 1.8, ease: Elastic.easeInOut})
                         .to(".u-logo", {duration: 1.1, delay: 2, scale: 1.78})
                         .to(".u-logo", {duration: 0.8, marginBottom: 30, scale: 1.78})
-                        .to(".u-logo", {duration: 0.5, x:0, scale: 0.1, opacity:0, onComplete: function () {
+                        .to(".u-logo", {duration: 0.8, marginBottom: 30, opacity: 0})
+                        .to(".u-logo", {duration: 0.2, x:0, scale: 0.1, onComplete: function () {
                                  gs.set(".main-content", {display: "block"});
                                 gs.set(".content-2, .content-2-text, .content-2-footer",{display :'none'})
                             }})
@@ -125,9 +126,10 @@
                     .from(elem, {y: -50, opacity: 0, duration: 1.5, stagger: 0.3, ease: Elastic.easeInOut})
                     .from(".content-1-text .text-content1", {duration: 1.0, opacity: 0, y: -70}, "-=1")
                     .from(".content-1-text .text-content2", {duration: 1.2, opacity: 0, y: 30}, "-=1")
-                    .from(".content-1-footer .text-content-footer span", {duration: 1.2, stagger:0.2, y:100, opacity: 0}, "-=1.1")
-                    .to(".content-1-text .text-content2", {opacity: 0, y: "+=50", ease: Back.easeInOut, duration: 1.2, delay: 3})
+                    .from(".content-1-footer .text-content-footer ", {duration: 1.2, stagger:0.2, y:100, opacity: 0}, "-=1.1")
+                    .to(".content-1-text .text-content2", {opacity: 0, y: "+=50", ease: Back.easeInOut, duration: 1.2, delay: 5})
                     .to(".content-1-text .text-content1", {opacity: 0, y: "-=50", ease: Back.easeInOut, duration: 1.2}, "-=1.0")
+                    .to(".content-1-footer .text-content-footer", {opacity: 0, y: "+=90", ease: Back.easeInOut, duration: 1.2}, "-=1.1")
 
                     .to(elem, {duration: 0.8, y: 50, opacity: 0, stagger: 0.2, ease: Power1.easeIn, onComplete : function () {
                             gs.set(".content-1, .content-1-text, .content-1-footer",{display :'none'});
@@ -143,11 +145,13 @@
                     .from(elem, {y: -50, opacity: 0, duration: 1.5, stagger: 0.3, ease: Elastic.easeInOut})
                     .from(".content-2-text .text-content1", {duration: 1.0, opacity: 0, y: -70}, "-=1")
                     .from(".content-2-text .text-content2", {duration: 1.2, opacity: 0, y: 30}, "-=1")
-                    .from(".content-2-footer .text-content-footer span", {duration: 1.0, stagger:0.2, y:200, opacity: 0}, "-=1.1")
-                    .to(".content-2-text .text-content2", {opacity: 0, y: "+=50", ease: Back.easeInOut, duration: 1.2, delay: 3})
+                    .from(".content-2-footer .text-content-footer ", {duration: 1.0, stagger:0.2, y:200, opacity: 0}, "-=1.1")
+                    .to(".content-2-text .text-content2", {opacity: 0, y: "+=50", ease: Back.easeInOut, duration: 1.2, delay: 5})
                     .to(".content-2-text .text-content1", {opacity: 0, y: "-=50", ease: Back.easeInOut, duration: 1.2}, "-=1.0")
+                    .to(".content-2-footer .text-content-footer", {opacity: 0, y: "+=90", ease: Back.easeInOut, duration: 1.2}, "-=1.1")
 
-                    .to(elem, {duration: 0.8, y: 50, opacity: 0, stagger: 0.2, ease: Power1.easeIn, onComplete : function () {
+                    .to(elem, {duration: 0.7, y: 50, opacity: 0, stagger: 0.2, ease: Power1.easeIn}, "-=0.8")
+                    .to(elem, {duration: 0.6, onComplete : function () {
                             gs.set(".content-2, .content-2-text, .content-2-footer",{display :'none'})
                             gs.set(".content-1, .content-1-text, .content-1-footer",{display :'block'});
                         }}, "-=0.8")
