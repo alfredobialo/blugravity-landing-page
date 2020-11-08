@@ -29,41 +29,10 @@ div.circle {
     color: #8f8e8e;
 }
 
-.mega-title {
-    font-size: 8rem;
-    font-weight: bolder;
-    font-family: "Arial Black", Verdana, Tahoma, sans-serif;
-    margin-bottom: 0 !important;
-    letter-spacing: 2px;
-}
 
-.mega-title-md {
-    font-size: 4rem;
-    font-weight: bolder;
-    font-family: "Arial Black", Verdana, Tahoma, sans-serif;
-    line-height: 2.8rem;
-}
-
-.content-button {
-    background-color: #757474;
-    color: white;
-    font-size: 1.4rem;
-    font-family: Verdana, sans-serif;
-    border-radius: 8px;
-    padding: 1.2rem 4.2rem;
-
-}
-
-.mega-title-xs {
-    font-size: 0.94rem;
-}
-
-.h-43 {
-    height: 30% !important;
-}
 div.content-1, div.content-2
 {
-    min-width: 500px;
+    /*min-width: 500px;*/
 }
 div.content-1 {
     z-index: 10;
@@ -79,3 +48,76 @@ div.content-1, div.content-2 {
 div.main-content {
 
 }
+/* Tablet Screen*/
+@media (min-width: 320px) {
+    .mega-title {
+        font-size: 4.2rem;
+        font-weight: bolder;
+        margin-bottom: 0 !important;
+        font-family: "Arial Black", Verdana, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .mega-title-md {
+        font-size: 2.0rem;
+        font-weight: bolder;
+        font-family: "Arial Black", Verdana, Tahoma, sans-serif;
+        line-height: 2.1rem;
+    }
+
+    .content-button {
+        background-color: #757474;
+        color: white;
+        font-size: 1.2rem;
+        font-family: Verdana, sans-serif;
+        border-radius: 6px;
+        padding: 1.2rem 2.2rem;
+    }
+
+    .mega-title-xs {
+        font-size: 0.99rem;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .h-43 {
+        height: 30% !important;
+    }
+}
+@media (min-width: 720px) {
+
+
+    .mega-title {
+        font-size: 8rem;
+        font-weight: bolder;
+        margin-bottom: 0 !important;
+        font-family: "Arial Black", Verdana, Tahoma, sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .mega-title-md {
+        font-size: 4rem;
+        font-weight: bolder;
+        font-family: "Arial Black", Verdana, Tahoma, sans-serif;
+        line-height: 2.8rem;
+    }
+
+    .content-button {
+        background-color: #757474;
+        color: white;
+        font-size: 1.4rem;
+        font-family: Verdana, sans-serif;
+        border-radius: 8px;
+        padding: 1.2rem 4.2rem;
+
+    }
+
+    .mega-title-xs {
+        font-size: 0.94rem;
+    }
+
+    .h-43 {
+        height: 43% !important;
+    }
+}
+
