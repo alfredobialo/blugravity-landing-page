@@ -18,9 +18,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f1795b54-04f6-4be0-9a56-ded55e868efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <list id="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" name="Do not Commit" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/HUM777B.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/HUM777BI.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/HUM777I.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/HUM777N.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Hum777Bd.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Hum777It.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Hum777Rm.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Humanist 777 Bold BT.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Humnst777 BT Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/Humnst777BTBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/blugraviti-font/humanist-777-bt.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +60,9 @@
         <option value="$PROJECT_DIR$/assets/mailTemplate.html" />
         <option value="$PROJECT_DIR$/assets/gsap.html" />
         <option value="$PROJECT_DIR$/Brandux.html" />
-        <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/gsap.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -59,15 +70,21 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/.idea.goodnessRaven_project.dir/.idea/workspace.xml">
       <ranges>
-        <range start1="19" end1="21" start2="19" end2="19" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="24" end1="25" start2="22" end2="25" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="53" end1="53" start2="53" end2="54" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="56" end1="56" start2="57" end2="72" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="127" end1="128" start2="143" end2="151" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="167" end1="168" start2="190" end2="192" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="170" end1="170" start2="194" end2="202" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
-        <range start1="174" end1="175" start2="206" end2="207" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
-        <range start1="177" end1="178" start2="209" end2="210" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="20" end1="21" start2="20" end2="20" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="23" end1="23" start2="22" end2="34" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="51" end1="52" start2="62" end2="62" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="54" end1="54" start2="64" end2="65" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="57" end1="57" start2="68" end2="88" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="58" end1="73" start2="89" end2="89" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="85" end1="85" start2="101" end2="102" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="93" end1="94" start2="110" end2="122" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="107" end1="107" start2="135" end2="149" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="143" end1="144" start2="185" end2="235" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="147" end1="148" start2="238" end2="239" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="183" end1="184" start2="274" end2="280" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="186" end1="186" start2="282" end2="298" changelist="d8580e15-c0f3-43f6-9c2d-f8ed9a4f69de" />
+        <range start1="190" end1="191" start2="302" end2="303" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
+        <range start1="193" end1="194" start2="305" end2="310" changelist="f1795b54-04f6-4be0-9a56-ded55e868efb" />
       </ranges>
     </file>
   </component>
@@ -105,6 +122,20 @@
       <workItem from="1603541993802" duration="4113000" />
       <workItem from="1603619326923" duration="31461000" />
       <workItem from="1604238933463" duration="11978000" />
+      <workItem from="1604406760655" duration="25000" />
+      <workItem from="1604407459513" duration="97000" />
+      <workItem from="1604408591438" duration="1334000" />
+      <workItem from="1604412117208" duration="450000" />
+      <workItem from="1604428322925" duration="48000" />
+      <workItem from="1604428428956" duration="1000" />
+      <workItem from="1604428643968" duration="118000" />
+      <workItem from="1604429125362" duration="2000" />
+      <workItem from="1604429448637" duration="20000" />
+      <workItem from="1604429497189" duration="19000" />
+      <workItem from="1604429553429" duration="42000" />
+      <workItem from="1604429640310" duration="16000" />
+      <workItem from="1604451915236" duration="1073000" />
+      <workItem from="1604543782406" duration="22514000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1604066239829</created>
@@ -141,7 +172,56 @@
       <option name="project" value="LOCAL" />
       <updated>1604348459447</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes">
+      <created>1604377243755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604377243755</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes">
+      <created>1604387512904</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604387512904</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes">
+      <created>1604412147478</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604412147478</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Working animated Content, With FavIcon">
+      <created>1604734188228</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604734188228</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fluid Centered Animation Working">
+      <created>1604734929716</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604734929716</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Animation Complete and Fluid">
+      <created>1604770985492</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604770985492</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updates">
+      <created>1604777710934</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604777710934</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,17 +261,26 @@
     <MESSAGE value="Best View" />
     <MESSAGE value="modified gitignore" />
     <MESSAGE value="Changes to Logo Width and Height" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to Logo Width and Height" />
+    <MESSAGE value="Changes" />
+    <MESSAGE value="Working animated Content, With FavIcon" />
+    <MESSAGE value="Fluid Centered Animation Working" />
+    <MESSAGE value="Animation Complete and Fluid" />
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="807" y="427" key="VCS.ChangelistChooser" timestamp="1604298462425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604298462425" />
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604377496317">
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1604777712760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604377496317" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604777712760" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604731450720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604731450720" />
     <state x="740" y="325" key="save.file.as.template.dialog" timestamp="1603797312026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
