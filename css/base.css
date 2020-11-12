@@ -1,10 +1,12 @@
-@font-face {
-    font-family: "Blugraviti";
-    src: url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf");
-    src: url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf") format("woff"),
-    url("../assets/blugraviti-font/Humanist 777 Bold BT.ttf") format("opentype")
-
+@font-face {font-family: "Arial Black";
+    src: url("@font-face/arial-black.eot"); /* IE9*/
+    src: url("@font-face/arial-black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("@font-face/arial-black.woff2") format("woff2"), /* chrome、firefox */
+    url("@font-face/arial-black.woff") format("woff"), /* chrome、firefox */
+    url("@font-face/arial-black.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("@font-face/arial-black.svg#Arial Black") format("svg"); /* iOS 4.1- */
 }
+
 div.circle {
     width: 200px;
     height: 200px;
@@ -30,10 +32,10 @@ div.circle {
 }
 
 
-div.content-1, div.content-2
-{
+div.content-1, div.content-2 {
     /*min-width: 500px;*/
 }
+
 div.content-1 {
     z-index: 10;
 }
@@ -43,11 +45,13 @@ div.content-2 {
 }
 
 div.content-1, div.content-2 {
-   /* position: absolute;*/
+    /* position: absolute;*/
 }
+
 div.main-content {
 
 }
+
 /* Tablet Screen*/
 @media (min-width: 320px) {
     .mega-title {
@@ -84,6 +88,7 @@ div.main-content {
         height: 30% !important;
     }
 }
+
 @media (min-width: 720px) {
 
 
