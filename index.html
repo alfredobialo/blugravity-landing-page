@@ -35,7 +35,7 @@
                 <p class="mega-title mega-font mega-content-1">Antigraviti</p>
             </div>
             <div class="content-1-text">
-                <span  class="mega-title-md mega-font text-content1"><span>our</span><span> way</span><span> away</span><span> from</span></span>
+                <span  class="mega-title-md mega-font text-content1 d-sm-inline-block mb-sm-3"><span>our</span><span> way</span><span> away</span><span> from</span></span>
                 <br class="d-none d-sm-block">
                 <span class="mega-title-md mega-font text-content2"><span>the</span><span> brandwagon</span></span>
             </div>
@@ -48,12 +48,12 @@
                 </p>
             </div>
             <div class="content-2">
-                <p class="mega-title mega-font mega-content-1">Captiviti <span class="d-none d-sm-inline-block">or Infiniti</span></p>
+                <p class="mega-title mega-font mega-content-1">Captiviti <span class="d-none d-md-inline-block">or Infiniti</span></p>
             </div>
             <div class="content-2-text">
-                <span class="mega-title-md mega-font text-content1">Brand kinetic Energy</span>
+                <span class="mega-title-md mega-font text-content1 d-sm-inline-block mb-sm-3">Brand kinetic Energy</span>
                 <br class="d-none d-sm-block">
-                <span class="mega-title-md mega-font text-content2">Nowhere to hide</span>
+                <span class="mega-title-md mega-font text-content2  mt-2 mt-sm-1">Nowhere to hide</span>
             </div>
             <div class="content-2-footer">
                 <p class="mega-title-xs mega-font mt-5 text-content-footer">
@@ -105,7 +105,7 @@
             console.log("Screen Orientation Changed");
             if(screen.availWidth <= 720)
             {
-                scaleRatio = 1.1008;
+                scaleRatio = 1.2008;
             }
         }
         console.log(screen, scaleRatio,"ScaleRatio");
@@ -127,8 +127,8 @@
                         .set(".main-content", {display: "none"})
                         .to(".u-logo", {duration: 2.2, opacity: 1, scale: scaleRatio, ease: Elastic.easeInOut})
                         .to(".u-logo", {duration: 1.1, delay: 2, scale: scaleRatio-0.017})
-                        .to(".u-logo", {duration: 0.8, marginBottom: 30, scale: scaleRatio-0.017})
-                        .to(".u-logo", {duration: 0.8, marginBottom: 30, opacity: 0})
+                        .to(".u-logo", {duration: 0.8, scale: scaleRatio-0.017})
+                        .to(".u-logo", {duration: 0.8,  opacity: 0})
                         .to(".u-logo", {
                             duration: 0.2, x: 0, scale: 0.1, onComplete: function () {
                                 gs.set(".main-content", {display: "block"});
