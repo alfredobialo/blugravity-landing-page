@@ -55,18 +55,21 @@ div.main-content {
 /* Tablet Screen*/
 @media (min-width: 320px) {
     .mega-title {
-        font-size: 4.2rem;
+        font-size: 2.7rem;
         font-weight: bolder;
         margin-bottom: 0 !important;
         font-family: "Arial Black", Verdana, Tahoma, sans-serif;
         letter-spacing: 2px;
+        padding: 5px;
     }
 
     .mega-title-md {
-        font-size: 2.0rem;
+        font-size: 1.9rem;
         font-weight: bolder;
         font-family: "Arial Black", Verdana, Tahoma, sans-serif;
-        line-height: 2.1rem;
+        line-height: 1.7rem;
+        word-spacing: 2px;
+        padding: 5px;
     }
 
     .content-button {
@@ -75,7 +78,7 @@ div.main-content {
         font-size: 1.2rem;
         font-family: Verdana, sans-serif;
         border-radius: 6px;
-        padding: 1.2rem 2.2rem;
+        padding: 10px 2rem;
     }
 
     .mega-title-xs {
@@ -93,7 +96,7 @@ div.main-content {
 
 
     .mega-title {
-        font-size: 8rem;
+        font-size: 5.0rem;
         font-weight: bolder;
         margin-bottom: 0 !important;
         font-family: "Arial Black", Verdana, Tahoma, sans-serif;
@@ -101,10 +104,11 @@ div.main-content {
     }
 
     .mega-title-md {
-        font-size: 4rem;
+        font-size: 3.2rem;
         font-weight: bolder;
         font-family: "Arial Black", Verdana, Tahoma, sans-serif;
-        line-height: 2.8rem;
+        line-height: 1.6rem;
+        word-spacing: 2px;
     }
 
     .content-button {
@@ -113,7 +117,7 @@ div.main-content {
         font-size: 1.4rem;
         font-family: Verdana, sans-serif;
         border-radius: 8px;
-        padding: 1.2rem 4.2rem;
+        padding: 1rem 3.2rem;
 
     }
 
