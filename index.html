@@ -27,7 +27,7 @@
 <div class="container-fluid ">
     <div class="vh-100   d-flex flex-column justify-content-center align-items-center">
         <div class="u ">
-            <img class="u-logo " src="assets/images/logo/main-logo.png" width="300" />
+            <img class="u-logo " src="assets/images/logo/main-logo2.png" width="200" />
         </div>
 
         <div class="main-content position-relative ">
@@ -35,7 +35,7 @@
                 <p class="mega-title mega-font mega-content-1">Antigraviti</p>
             </div>
             <div class="content-1-text">
-                <span  class="mega-title-md mega-font text-content1 d-sm-inline-block mb-sm-3"><span>our</span><span> way</span><span> away</span><span> from</span></span>
+                <span class="mega-title-md mega-font text-content1 d-sm-inline-block mb-sm-3"><span>our</span><span> way</span><span> away</span><span> from</span></span>
                 <br class="d-none d-sm-block">
                 <span class="mega-title-md mega-font text-content2"><span>the</span><span> brandwagon</span></span>
             </div>
@@ -43,7 +43,8 @@
                 <p class="mega-title-xs mega-font mt-5 text-content-footer">
                     <span> We are collection of senior level strategists who have spent our <br class="d-none d-md-block">
                     entire career building  strong brands and sharing their stories. <br class="d-none d-md-block"> </span>
-                    <span class="mega-font">Our mission is simple &boxh; to help you accomplish your marketing <br class="d-none d-md-block"> objectives, whether they are
+                    <span class="mega-font">Our mission is simple &boxh; to help you accomplish your marketing <br
+                            class="d-none d-md-block"> objectives, whether they are
                     big or small.</span>
                 </p>
             </div>
@@ -63,9 +64,25 @@
                     big or small.</span>
                 </p>
             </div>
-            <div class="d-none content-footer h-43 d-flex flex-column mb-4 justify-content-end align-items-start">
-                <button class="content-button btn  btn-lg">ENTER</button>
+            <div class="d-none content-footer h-43 mb-4 d-flex flex-column  justify-content-end align-items-start">
+                <div class="row justify-content-center align-items-end" style="width: 100%">
+                    <div class="col-5">
+                        <button class="content-button btn  btn-lg">ENTER</button>
+                    </div>
+                    <div class="col-7 text-right">
+                        <div class="social-info">
+                            <span class="p-2"><a href="https://web.facebook.com/Blugraviti-487416285111545" target="_blank"><img
+                                    src="assets/images/021-facebook.png" width="32" alt="Facebook"></a></span>
+                            <span class="p-2"><a href="https://linkedin.com/company/blugraviti" target="_blank"><img
+                                    src="assets/images/025-instagram.png" width="32" alt="Facebook"></a></span>
+                            <span class="p-2"><a href="https://www.instagram.com/blugraviti/?hl=en" target="_blank"><img
+                                    src="assets/images/045-linkedin.png" width="32" alt="Facebook"></a></span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
     </div>
@@ -95,20 +112,18 @@
                     return 300
                 }
             }
-        }, scaleRatio  = 1.8;
+        }, scaleRatio = 1.8;
 
-        if(screen.availWidth <= 720)
-        {
+        if (screen.availWidth <= 720) {
             scaleRatio = 1.1008;
         }
-        screen.orientation.onchange = function(){
+        screen.orientation.onchange = function () {
             console.log("Screen Orientation Changed");
-            if(screen.availWidth <= 720)
-            {
+            if (screen.availWidth <= 720) {
                 scaleRatio = 1.2008;
             }
         }
-        console.log(screen, scaleRatio,"ScaleRatio");
+        console.log(screen, scaleRatio, "ScaleRatio");
 
         function anim() {
             var master = gs.timeline({repeat: -1})
@@ -117,6 +132,7 @@
                     .add(animateContent2("secondContent", ".content-2 .mega-content-1"), "-=0.7")
                 //.add(animateContent("secondContent", ".content-2 .mega-content-1"))
             ;
+
             //.fromTo("body",{backgroundColor : "#f6f3f3", duration : 1.5},{backgroundColor : "#be1010", duration : 2.5})
 
 
@@ -126,9 +142,9 @@
                         .set("img.u-logo", {opacity: 0})
                         .set(".main-content", {display: "none"})
                         .to(".u-logo", {duration: 2.2, opacity: 1, scale: scaleRatio, ease: Elastic.easeInOut})
-                        .to(".u-logo", {duration: 1.1, delay: 2, scale: scaleRatio-0.017})
-                        .to(".u-logo", {duration: 0.8, scale: scaleRatio-0.017})
-                        .to(".u-logo", {duration: 0.8,  opacity: 0})
+                        .to(".u-logo", {duration: 1.1, delay: 2, scale: scaleRatio - 0.017})
+                        .to(".u-logo", {duration: 0.8, scale: scaleRatio - 0.017})
+                        .to(".u-logo", {duration: 0.8, opacity: 0})
                         .to(".u-logo", {
                             duration: 0.2, x: 0, scale: 0.1, onComplete: function () {
                                 gs.set(".main-content", {display: "block"});
